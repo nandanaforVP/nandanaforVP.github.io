@@ -67,6 +67,8 @@ $("#index-form").submit(function (event) {
         $('#index-form-status span').text('Your form has been submitted. Thank You!');
         $('#index-form-status').removeClass('alert-danger');
         $('#index-form-status').addClass('alert-success');
+        $('#index-form input').val('');
+        $('#index-form textarea').val('');
     });
 
     // Callback handler that will be called on failure
@@ -85,6 +87,7 @@ $("#index-form").submit(function (event) {
     // if the request failed or succeeded
     request.always(function () {
         toggleFormStatusDisplay();
+        $("html, body").animate({ scrollTop: "0" });
         // Reenable the inputs
         $inputs.prop("disabled", false);
     });
