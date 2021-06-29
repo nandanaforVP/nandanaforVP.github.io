@@ -1,0 +1,78 @@
+.case-cards-container {
+}
+
+.case-card {
+    width: 300px;
+    border-radius: 10px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+}
+
+.case-card:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.case-card hr {
+    margin: 0;
+}
+
+.case-card a {
+    text-decoration: none;
+    color: black;
+}
+
+.case-card > div {
+    height: 60px;
+    width: 100%;
+    display: flex;
+}
+
+.case-card-heading {
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 0;
+}
+
+.case-card-report {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid rgb(185, 185, 185);
+    border-bottom-left-radius: 10px;
+    background-color: rgb(255, 238, 218);
+    transition: all 0.3s ease;
+}
+
+.case-card-ppt:hover, .case-card-report:hover {
+    background-color: rgb(243, 215, 180);
+    transition: all 0.3s ease;
+}
+
+
+.case-card-ppt {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-right-radius: 10px;
+    border-left: 1px solid rgb(185, 185, 185);
+    background-color: rgb(255, 238, 218);
+    transition: all 0.3s ease;
+}
+
+
+.case-card > div {
+    font-size: 14px;
+}
+.case-card > div i {
+    margin-left: 5px;
+    margin-top: 3px;
+    font-size: 10px;
+}

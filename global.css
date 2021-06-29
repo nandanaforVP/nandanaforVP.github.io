@@ -10,6 +10,19 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+section {
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+}
+
+section .section-heading {
+    font-size: 32px;
+    font-weight: bold;
+    color: rgb(99, 99, 99);
+    margin: 40px 10px;
+    text-align: center;
+}
+
 nav.navbar {
     padding: 5px 8vw;
 }
