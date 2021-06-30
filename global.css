@@ -19,7 +19,7 @@ section .section-heading {
     font-size: 32px;
     font-weight: bold;
     color: rgb(99, 99, 99);
-    margin: 40px 10px;
+    padding: 40px 10px;
     text-align: center;
 }
 
@@ -33,4 +33,50 @@ nav.navbar {
 
 .nav-item {
     padding: 8px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+.top-container {
+
+}
+
+.main-body {
+
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+}
+
+.footer-icons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-icons-container a {
+    margin: 5px 10px;
+    font-size: 22px;
+    color: rgb(109, 109, 109);
+    transition: all 0.3s ease;
+}
+
+.footer-icons-container a:hover {
+    color: rgb(58, 58, 58);
+    transition: all 0.3s ease;
+}
+
+footer .copyright {
+    font-size: 16px;
+    color: rgb(109, 109, 109);
 }
