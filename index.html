@@ -23,9 +23,66 @@
 
 <body>
   <div class="main-container">
-    
+    <div class="wave-container">
+      <div class="wave-depth"></div>
+      <svg viewbox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <style type="text/css">
+            .wave {
+              animation: wave 8s linear infinite;
+            }
+
+            .wave1 {
+              animation: wave1 10s linear infinite;
+            }
+
+            .wave2 {
+              animation: wave2 12s linear infinite;
+            }
+
+            @keyframes wave {
+              0% {
+                transform: translateX(0%);
+              }
+
+              100% {
+                transform: translateX(100%);
+              }
+            }
+
+            @keyframes wave1 {
+              0% {
+                transform: scaleY(1.2) translateX(0%);
+              }
+
+              100% {
+                transform: scaleY(1.2) translateX(100%);
+              }
+            }
+
+            @keyframes wave2 {
+              0% {
+                transform: scaleY(.8) translateX(0%);
+              }
+
+              100% {
+                transform: scaleY(.8) translateX(100%);
+              }
+            }
+          </style>
+          <path id='sineWave' fill="#0099ff" fill-opacity="0.2"
+            d="M0,160 C320,300,420,300,740,160 C1060,20,1120,20,1440,160 V0 H0" />
+        </defs>
+        <use class="wave" href="#sineWave" />
+        <use class="wave" x="-100%" href="#sineWave" />
+        <!-- <use class="wave1" href="#sineWave" />
+        <use class="wave1" x="-100%" href="#sineWave" />
+        <use class="wave2" href="#sineWave" />
+        <use class="wave2" x="-100%" href="#sineWave" /> -->
+      </svg>
+    </div>
     <div class="top-container">
-      <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <nav class="navbar navbar-expand-md navbar-light">
         <a class="navbar-brand" href="#">Nandana</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,8 +103,8 @@
         </div>
       </nav>
 
-      <div id="page-status"
-        class="alert alert-success d-none justify-content-between pl-4 pr-4 align-items-center" role="alert">
+      <div id="page-status" class="alert alert-success d-none justify-content-between pl-4 pr-4 align-items-center"
+        role="alert">
         <span></span>
         <i class="fa fa-times" onclick="toggleFormStatusDisplay('hide')"></i>
       </div>
@@ -55,8 +112,17 @@
 
     <div class="main-body">
       <section class="container">
+        <h1 class="section-heading">Who Am I?</h1>
+        <p class="descriptive-content">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+          standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+          make a type specimen book. It has survived not only fi
+        </p>
+      </section>
+      <section class="container">
         <h1 class="section-heading">Let me know the issues you're facing</h1>
-        <form id="ajax-form" autocomplete="on" data-id="AKfycbw3EnqObgQe6KoLL9KtlYD1xu4Fz-WwyBcJ52jhL9DsOZrAESanEWN1ha7fymnSqe8wZw">
+        <form id="ajax-form" autocomplete="on"
+          data-id="AKfycbw3EnqObgQe6KoLL9KtlYD1xu4Fz-WwyBcJ52jhL9DsOZrAESanEWN1ha7fymnSqe8wZw">
           <div class="form-row">
             <div class="col-md-6 mb-3">
               <label for="name">Name</label>
