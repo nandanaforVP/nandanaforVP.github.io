@@ -69,3 +69,20 @@ nav {
         padding: 3vw 2vw;
     }
 }
+
+
+
+/*
+*
+* Quotes Section
+*
+*/
+
+.carousel-indicators li {
+    border: none;
+    background: #ccc;
+}
+
+.carousel-indicators li.active {
+    background: rgb(99, 99, 99);
+}
