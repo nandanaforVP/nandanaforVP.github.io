@@ -23,6 +23,17 @@ section .section-heading {
     text-align: center;
 }
 
+section .section-item-heading {
+    font-size: 24px;
+    font-weight: 600;
+    color: rgb(99, 99, 99);
+}
+
+section .section-descriptive-content {
+    font-size: 16px;
+    color: rgb(99, 99, 99);
+}
+
 section .descriptive-content {
     text-align: center;
     color: rgb(99, 99, 99);

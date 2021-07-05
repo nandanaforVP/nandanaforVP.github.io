@@ -17,3 +17,55 @@ nav {
     width: 100vw;
     object-fit: cover;
 }
+
+.community-item {
+    align-items: center;
+    margin: 20px 5px;
+    box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+.community-item:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease-in-out;
+}
+.community-item .community-item-body {
+    align-self: stretch;
+    padding: 30px 20px;
+}
+
+.community-item .community-item-img-container {
+    padding: 0;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.community-item .community-item-img-container img {
+    width: 100%;
+}
+
+.section-item-heading {
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    
+    .community-item {
+        margin: 25px 0;
+    }
+    .section-item-heading {
+        text-align: left;
+    }
+
+    .community-item:nth-child(odd) .community-item-img-container, .community-item:nth-child(even) .community-item-body{
+        order: 1;
+    }
+    
+    .community-item:nth-child(odd) .community-item-body, .community-item:nth-child(even) .community-item-img-container {
+        order: 2;
+    }
+
+    .community-item .community-item-body {
+        padding: 3vw 2vw;
+    }
+}
