@@ -92,3 +92,9 @@ $("#ajax-form").submit(function (event) {
     // Prevent default posting of form
     event.preventDefault();
 });
+
+
+$(window).on('load', function (event) {
+    $('#preloader').addClass('d-none');
+    $('body > div.main-container').removeClass('d-none');
+});
