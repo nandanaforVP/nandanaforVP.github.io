@@ -1,7 +1,7 @@
 .wave-container {
     position: absolute;
     width: 100vw;
-    z-index: -1;
+    z-index: -10;
 }
 
 .wave-container .wave-depth {
@@ -49,7 +49,6 @@ nav {
 }
 
 @media (min-width: 768px) {
-    
     .community-item {
         margin: 25px 0;
     }
@@ -57,11 +56,13 @@ nav {
         text-align: left;
     }
 
-    .community-item:nth-child(odd) .community-item-img-container, .community-item:nth-child(even) .community-item-body{
+    .community-item:nth-child(odd) .community-item-img-container,
+    .community-item:nth-child(even) .community-item-body {
         order: 1;
     }
-    
-    .community-item:nth-child(odd) .community-item-body, .community-item:nth-child(even) .community-item-img-container {
+
+    .community-item:nth-child(odd) .community-item-body,
+    .community-item:nth-child(even) .community-item-img-container {
         order: 2;
     }
 
@@ -69,8 +70,6 @@ nav {
         padding: 3vw 2vw;
     }
 }
-
-
 
 /*
 *
@@ -85,4 +84,35 @@ nav {
 
 .carousel-indicators li.active {
     background: rgb(99, 99, 99);
+}
+
+
+/*
+*
+* Chart Section
+*
+*/
+
+.text-small {
+    font-size: 0.9rem;
+}
+
+.rounded {
+    border-radius: 1rem;
+}
+
+.position-center {
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.chart-img {
+    position: absolute;
+    border-radius: 50%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#pieChart {
 }
