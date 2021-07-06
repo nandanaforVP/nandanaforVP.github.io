@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reopen KGP</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5f59ca6ad3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../global.css">
+    <link rel="stylesheet" type="text/css" href="./about.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="top-container">
+            <nav class="navbar navbar-expand-md navbar-light bg-light">
+                <a class="navbar-brand" href="#">Nandana</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/about/about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/reopen_kgp/reopen_kgp.html">Reopen IITKGP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Proposals</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div id="page-status"
+                class="alert alert-success d-none justify-content-between pl-4 pr-4 align-items-center" role="alert">
+                <span></span>
+                <i class="fa fa-times" onclick="toggleFormStatusDisplay('hide')"></i>
+            </div>
+        </div>
+
+        <div class="main-body">
+            <section class="container">
+                <h1 class="section-heading mb-4">My Journey <span>1910–2000</span></h1>
+                <div class="flex-parent">
+                    <div class="milestone-flex-container">
+                        <div class="milestone">
+                            <span data-year="1910" data-info="headset"></span>
+                        </div>
+                        <div class="milestone">
+                            <span data-year="1920" data-info="jungle gym"></span>
+                        </div>
+                        <div class="milestone active">
+                            <span data-year="1930" data-info="chocolate chip cookie"></span>
+                        </div>
+                        <div class="milestone">
+                            <span data-year="1940" data-info="Jeep"></span>
+                        </div>
+                        <div class="milestone">
+                            <span data-year="1950" data-info="leaf blower"></span>
+                        </div>
+                        <div class="milestone">
+                            <span data-year="1960" data-info="magnetic stripe card"></span>
+                        </div>
+                        <div class="milestone">
+                            <span data-year="1970" data-info="wireless LAN"></span>
+                        </div>
+                        <div class="milestone">
+                            <span data-year="1980" data-info="flash memory"></span>
+                        </div>
+                        <div class="milestone">
+                            <span data-year="1990" data-info="World Wide Web"></span>
+                        </div>
+                        <div class="milestone">
+                            <span data-year="2000" data-info="Google AdWords"></span>
+                        </div>
+                    </div>
+                    <div class="milestone-card-container">
+                        <div class="milestone-card">
+                            <div class="milestone-card-header">
+                                <h1>1910</h1>
+                            </div>
+                            <hr />
+                            <div class="milestone-card-body">
+                                <div>
+                                    <img src="../assets/images/300 x 400.png" />
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                        unknown printer took a galley of type and scrambled it to make a type specimen
+                                        book.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="milestone-card">
+                            <div class="milestone-card-header">
+                                <h1>1920</h1>
+                            </div>
+                            <hr />
+                            <div class="milestone-card-body">
+                                <div>
+                                    <img src="../assets/images/300 x 400.png" />
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                        unknown printer took a galley of type and scrambled it to make a type specimen
+                                        book.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="milestone-card active">
+                            <div class="milestone-card-header">
+                                <h1>1930</h1>
+                            </div>
+                            <hr />
+                            <div class="milestone-card-body">
+                                <div>
+                                    <img src="../assets/images/300 x 400.png" />
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                        unknown printer took a galley of type and scrambled it to make a type specimen
+                                        book.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="milestone-card">
+                            <div class="milestone-card-header">
+                                <h1>1940</h1>
+                            </div>
+                            <hr />
+                            <div class="milestone-card-body">
+                                <div>
+                                    <img src="../assets/images/300 x 400.png" />
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                        unknown printer took a galley of type and scrambled it to make a type specimen
+                                        book.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="milestone-card">
+                            <div class="milestone-card-header">
+                                <h1>1950</h1>
+                            </div>
+                            <hr />
+                            <div class="milestone-card-body">
+                                <div>
+                                    <img src="../assets/images/300 x 400.png" />
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                        unknown printer took a galley of type and scrambled it to make a type specimen
+                                        book.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="milestone-card">
+                            <div class="milestone-card-header">
+                                <h1>Header</h1>
+                            </div>
+                            <hr />
+                            <div class="milestone-card-body">
+                                <div>
+                                    <img src="../assets/images/300 x 400.png" />
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                        unknown printer took a galley of type and scrambled it to make a type specimen
+                                        book.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="milestone-card">
+                            <div class="milestone-card-header">
+                                <h1>Header</h1>
+                            </div>
+                            <hr />
+                            <div class="milestone-card-body">
+                                <div>
+                                    <img src="../assets/images/300 x 400.png" />
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                        unknown printer took a galley of type and scrambled it to make a type specimen
+                                        book.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="milestone-card">
+                            <div class="milestone-card-header">
+                                <h1>Header</h1>
+                            </div>
+                            <hr />
+                            <div class="milestone-card-body">
+                                <div>
+                                    <img src="../assets/images/300 x 400.png" />
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                        unknown printer took a galley of type and scrambled it to make a type specimen
+                                        book.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="milestone-card">
+                            <div class="milestone-card-header">
+                                <h1>Header</h1>
+                            </div>
+                            <hr />
+                            <div class="milestone-card-body">
+                                <div>
+                                    <img src="../assets/images/300 x 400.png" />
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                        unknown printer took a galley of type and scrambled it to make a type specimen
+                                        book.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="milestone-card">
+                            <div class="milestone-card-header">
+                                <h1>Header</h1>
+                            </div>
+                            <hr />
+                            <div class="milestone-card-body">
+                                <div>
+                                    <img src="../assets/images/300 x 400.png" />
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                        unknown printer took a galley of type and scrambled it to make a type specimen
+                                        book.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="container">
+                <h1 class="section-heading">
+                    Gallery
+                </h1>
+                <div>
+
+                </div>
+            </section>
+        </div>
+
+        <footer class="bg-light">
+            <div class="footer-icons-container">
+                <a href="#">
+                    <i class="fa fa-facebook-square"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-whatsapp"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-instagram"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-envelope"></i>
+                </a>
+            </div>
+            <div class="copyright">
+                Copyright &copy; Devaki Nandana 2021
+            </div>
+        </footer>
+
+        <script type="text/javascript" src="../global.js"></script>
+        <script type="text/javascript" src="./about.js"></script>
+</body>
+
+</html>

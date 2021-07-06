@@ -82,7 +82,9 @@ $("#ajax-form").submit(function (event) {
     // if the request failed or succeeded
     request.always(function () {
         toggleFormStatusDisplay();
-        $("html, body").animate({ scrollTop: "0" });
+        $("html, body").animate({
+            scrollTop: $('#page-status').offset().top
+        }, 1000);
         // Reenable the inputs
         $inputs.prop("disabled", false);
     });
