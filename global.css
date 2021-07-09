@@ -5,7 +5,7 @@
     --color-light: #E2F3F9;
     --color-medium: #59A9B5;
     --color-dark: #438797;
-    --color-text: #636363;
+    --color-text: #fff;
 }
 
 
@@ -17,6 +17,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Lato", sans-serif;
+    background-color: #4cbdaa;
 }
 
 section {
@@ -49,12 +50,16 @@ section .descriptive-content {
 }
 
 nav.navbar {
-    background-color: var(--color-light);
+    background-color: #339786;
     padding: 5px 8vw;
 }
 
 .navbar-nav {
     margin-left: auto;
+}
+
+.navbar-nav .nav-link, .navbar-brand {
+    color: white!important;
 }
 
 .nav-item {

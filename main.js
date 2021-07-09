@@ -96,7 +96,7 @@ var pieChart = new Chart(ctx, {
             arc: true,
             position: 'border',
             fontSize: 14,
-            fontColor: '#7a7a7a'
+            fontColor: '#7a7a7a',
         }
     },
     data: {
