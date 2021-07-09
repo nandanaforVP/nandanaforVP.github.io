@@ -94,7 +94,9 @@ var pieChart = new Chart(ctx, {
         pieceLabel: {
             render: 'label',
             arc: true,
-            position: 'border'
+            position: 'border',
+            fontSize: 14,
+            fontColor: '#7a7a7a'
         }
     },
     data: {
@@ -109,12 +111,12 @@ var pieChart = new Chart(ctx, {
                 borderWidth: 5,
                 backgroundColor: [
                     '#ffb0d0',
-                    "#ff8bb9",
+                    "#ffa836",
                     "#f8f8fa"
                 ],
                 hoverBackgroundColor: [
                     '#ffb0d0',
-                    "#ff8bb9",
+                    "#ffa836",
                     "#f8f8fa"
                 ]
             }
