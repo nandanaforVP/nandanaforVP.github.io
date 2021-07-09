@@ -1,5 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 
+
+:root {
+    --color-light: #E2F3F9;
+    --color-medium: #59A9B5;
+    --color-dark: #438797;
+    --color-text: #636363;
+}
+
+
 * {
     box-sizing: border-box;
 }
@@ -18,7 +27,7 @@ section {
 section .section-heading {
     font-size: 32px;
     font-weight: bold;
-    color: rgb(99, 99, 99);
+    color: var(--color-text);
     padding: 40px 10px;
     text-align: center;
 }
@@ -26,20 +35,21 @@ section .section-heading {
 section .section-item-heading {
     font-size: 24px;
     font-weight: 600;
-    color: rgb(99, 99, 99);
+    color: var(--color-text);
 }
 
 section .section-descriptive-content {
     font-size: 16px;
-    color: rgb(99, 99, 99);
+    color: var(--color-text);
 }
 
 section .descriptive-content {
     text-align: center;
-    color: rgb(99, 99, 99);
+    color: var(--color-text);
 }
 
 nav.navbar {
+    background-color: var(--color-light);
     padding: 5px 8vw;
 }
 
@@ -81,26 +91,26 @@ footer {
 .footer-icons-container a {
     margin: 5px 10px;
     font-size: 22px;
-    color: rgb(109, 109, 109);
+    color: var(--color-medium);
     transition: all 0.3s ease;
 }
 
 .footer-icons-container a:hover {
-    color: rgb(58, 58, 58);
+    color: var(--color-dark);
     transition: all 0.3s ease;
 }
 
 footer .copyright {
     font-size: 16px;
-    color: rgb(109, 109, 109);
+    color: var(--color-text);
 }
 
 /* Preloader section */
 
 .preloader {
     position: fixed;
-    background: #e3e4e8;
-    color: #17181c;
+    background: var(--color-light);
+    color: var(--color-medium);
     display: grid;
     place-items: center;
     height: 100vh;

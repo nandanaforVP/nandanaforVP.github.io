@@ -21,7 +21,7 @@
 .milestone {
     width: 25px;
     height: 25px;
-    background-color: rgb(109, 109, 109);
+    background-color: var(--color-medium);
     position: relative;
     border-radius: 50%;
 }
@@ -36,7 +36,7 @@
     z-index: -1;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgb(109, 109, 109);
+    background-color: var(--color-medium);
     width: 4vw;
     height: 5px;
     max-width: 50px;
@@ -48,13 +48,13 @@
     right: calc(-4vw + 12.5px);
 }
 .milestone.active {
-    background-color: rgb(109, 109, 109);
+    background-color: var(--color-medium);
 }
 .milestone.active::before {
-    background-color: rgb(109, 109, 109);
+    background-color: var(--color-medium);
 }
 .milestone.active::after {
-    background-color: #aeb6bf;
+    background-color: var(--color-light);
 }
 .milestone.active span {
     font-weight: 700;
@@ -68,7 +68,7 @@
 .milestone.active ~ .milestone,
 .milestone.active ~ .milestone::before,
 .milestone.active ~ .milestone::after {
-    background-color: #aeb6bf;
+    background-color: var(--color-light);
 }
 .milestone span {
     width: 1px;
@@ -136,7 +136,7 @@
     align-self: center;
     padding: 10px 20px;
     font-size: 16px;
-    color: rgb(109, 109, 109);
+    color: var(--color-text);
 }
 
 @media (min-width: 1250px) {
@@ -179,7 +179,7 @@
         width: 60px;
         height: 60px;
         margin: 0 10px 50px;
-        background-color: #aeb6bf;
+        background-color: var(--color-light);
     }
     .milestone::before,
     .milestone::after {
@@ -199,7 +199,7 @@
     .milestone span::after {
         top: 50%;
         transform: translate(-50%, -50%);
-        color: #ecf0f1;
+        color: var(--color-light);
     }
     .description-flex-container {
         margin-top: 30px;

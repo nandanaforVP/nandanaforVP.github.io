@@ -20,7 +20,7 @@
 
 .case-card a {
     text-decoration: none;
-    color: black;
+    color: var(--color-text);
 }
 
 .case-card > div {
@@ -45,12 +45,12 @@
     align-items: center;
     border-right: 1px solid rgb(185, 185, 185);
     border-bottom-left-radius: 10px;
-    background-color: rgb(255, 238, 218);
+    background-color: var(--color-light);
     transition: all 0.3s ease;
 }
 
 .case-card-ppt:hover, .case-card-report:hover {
-    background-color: rgb(243, 215, 180);
+    background-color: #ceedfa;
     transition: all 0.3s ease;
 }
 
@@ -63,7 +63,7 @@
     align-items: center;
     border-bottom-right-radius: 10px;
     border-left: 1px solid rgb(185, 185, 185);
-    background-color: rgb(255, 238, 218);
+    background-color: var(--color-light);
     transition: all 0.3s ease;
 }
 

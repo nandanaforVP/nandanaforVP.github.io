@@ -5,11 +5,9 @@
 }
 
 .wave-container .wave-depth {
-    background-color: #0099ff33;
+    background-color: var(--color-light);
+    opacity: 0.5;
     height: 20vh;
-}
-
-nav {
 }
 
 .bslider {
@@ -79,13 +77,20 @@ nav {
 
 .carousel-indicators li {
     border: none;
-    background: #ccc;
+    background: var(--color-medium);
+}
+
+#quotesCarousel .carousel-nav, .carousel .carousel-nav {
+    color: var(--color-dark);
 }
 
 .carousel-indicators li.active {
-    background: rgb(99, 99, 99);
+    background: var(--color-medium);
 }
 
+.carousel-item i {
+    color: var(--color-medium);
+}
 
 /*
 *
