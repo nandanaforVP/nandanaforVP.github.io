@@ -1,0 +1,7 @@
+label {
+    color: var(--color-text);
+}
+
+form .submit-btn {
+    background-color: var(--color-light);
+}

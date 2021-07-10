@@ -12,7 +12,7 @@
     justify-content: space-around;
     align-items: center;
     width: 80vw;
-    height: 100px;
+    height: 140px;
     max-width: 1000px;
     position: relative;
     z-index: 0;
@@ -21,7 +21,7 @@
 .milestone {
     width: 25px;
     height: 25px;
-    background-color: var(--color-medium);
+    background-color: var(--color-dark);
     position: relative;
     border-radius: 50%;
 }
@@ -36,7 +36,7 @@
     z-index: -1;
     top: 50%;
     transform: translateY(-50%);
-    background-color: var(--color-medium);
+    background-color: var(--color-dark);
     width: 4vw;
     height: 5px;
     max-width: 50px;
@@ -48,10 +48,10 @@
     right: calc(-4vw + 12.5px);
 }
 .milestone.active {
-    background-color: var(--color-medium);
+    background-color: var(--color-dark);
 }
 .milestone.active::before {
-    background-color: var(--color-medium);
+    background-color: var(--color-dark);
 }
 .milestone.active::after {
     background-color: var(--color-light);
@@ -90,14 +90,17 @@
     top: 25px;
     transform: translateX(-50%);
     font-size: 14px;
+    color: var(--color-text);
 }
 .milestone span::before {
     content: attr(data-info);
-    top: -65px;
-    width: 70px;
+    top: -100px;
+    left: -5px;
+    width: 200px;
     transform: translateX(-5px) rotateZ(-45deg);
     font-size: 12px;
     text-indent: -10px;
+    color: var(--color-text);
 }
 
 .milestone-card-container {
@@ -112,7 +115,7 @@
     flex-direction: column;
     padding: 3vw;
     border-radius: 10px;
-    box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
+    box-shadow: 0 7px 30px -10px rgba(255, 255, 255, 0.5);
 }
 .milestone-card-container .milestone-card.active {
     display: flex;
@@ -120,6 +123,7 @@
 
 .milestone-card-container .milestone-card .milestone-card-header h1 {
     font-size: 24px;
+    color: var(--color-text);
     text-align: center;
 }
 
@@ -178,8 +182,7 @@
     .milestone {
         width: 60px;
         height: 60px;
-        margin: 0 10px 50px;
-        background-color: var(--color-light);
+        margin: 0 10px 60px;
     }
     .milestone::before,
     .milestone::after {
@@ -195,11 +198,13 @@
         transform: translateX(-50%);
         text-indent: 0;
         text-align: center;
+        left: 8vw;
+        width: 70px;
     }
     .milestone span::after {
         top: 50%;
         transform: translate(-50%, -50%);
-        color: var(--color-light);
+        color: var(--color-text);
     }
     .description-flex-container {
         margin-top: 30px;
@@ -208,6 +213,12 @@
     .milestone-card-container .milestone-card .milestone-card-body div {
         text-align: center;
         display: block;
+    }
+    .milestone.active ~ .milestone span::before {
+        color: var(--color-text);
+    }
+    .milestone.active ~ .milestone span::after {
+        color: var(--color-dark);
     }
 }
 

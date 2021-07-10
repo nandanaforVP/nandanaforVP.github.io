@@ -18,8 +18,8 @@
 
 .community-item {
     align-items: center;
-    margin: 20px 5px;
-    box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
+    margin: 30px 5px;
+    box-shadow: 0 7px 30px -10px rgba(255, 255, 255, 0.5);
     transition: transform 0.3s ease-in-out;
 }
 
