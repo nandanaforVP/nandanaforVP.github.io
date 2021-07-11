@@ -20,6 +20,7 @@
     margin: 30px 5px;
     box-shadow: 0 7px 30px -10px rgba(255, 255, 255, 0.5);
     transition: transform 0.3s ease-in-out;
+    color: var(--color-text);
 }
 
 .community-item:hover {
@@ -29,6 +30,21 @@
 .community-item .community-item-body {
     align-self: stretch;
     padding: 30px 20px;
+}
+
+.community-item .community-item-body .icons-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.community-item .community-item-body .icons-container a {
+    font-size: 24px;
+    margin: 10px;
+    color: var(--color-text);
+}
+
+.community-item .community-item-body .icons-container a:hover {
+    color: var(--color-light);
 }
 
 .community-item .community-item-img-container {
