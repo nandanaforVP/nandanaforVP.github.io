@@ -34,17 +34,18 @@
 
 .community-item .community-item-body .icons-container {
     margin-top: 20px;
-    text-align: center;
+    text-align: right;
 }
 
 .community-item .community-item-body .icons-container a {
-    font-size: 24px;
+    font-size: 26px;
     margin: 10px;
     color: var(--color-text);
 }
 
 .community-item .community-item-body .icons-container a:hover {
     color: var(--color-light);
+    text-decoration: none;
 }
 
 .community-item .community-item-img-container {
