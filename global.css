@@ -20,6 +20,29 @@ body {
     background-color: var(--color-medium);
 }
 
+/*
+Scrollbar Start
+*/
+
+body {
+    overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+    width: 6px;
+    background-color: var(--color-light);
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 1rem;
+    background-color: var(--color-dark);
+    /*background-image: linear-gradient(to bottom, #0f0f0f 0%, #d6d6d6 100%);*/
+}
+
+/*
+Scrollbar End
+*/
+
 section {
     padding-top: 5vw;
     padding-bottom: 5vw;
