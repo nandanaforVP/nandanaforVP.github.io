@@ -22,7 +22,7 @@ const galleryImages = [
     '../assets/images/gallery/Secy.jpg',
     '../assets/images/gallery/Illu.jpg',
     '../assets/images/gallery/group1.jpeg',
-    '../assets/images/gallery/group2.jpeg',
+    '../assets/images/gallery/group.jpeg',
     '../assets/images/gallery/classroom.jpg',
     '../assets/images/gallery/mess1.jpg',
     '../assets/images/gallery/mess2.jpg',
