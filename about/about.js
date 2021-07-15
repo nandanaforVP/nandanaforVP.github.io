@@ -1,6 +1,9 @@
 
 /* Timeline JS */
 
+var current = 0;
+var max = $('.milestone').length;
+
 $(function () {
     var milestones = $('.milestone');
     var cards = $('.milestone-card-container').find('.milestone-card');
@@ -11,7 +14,30 @@ $(function () {
 
         t.add(matchedCard).addClass('active');
         milestones.not(t).add(cards.not(matchedCard)).removeClass('active');
+        current = ind;
     });
+});
+
+$('#timeline-prev').click(function () {
+    var milestones = $('.milestone');
+    var cards = $('.milestone-card-container').find('.milestone-card');
+    var ind = ((current - 1 < 0)?0:current-1), matchedCard = cards.eq(ind), t = milestones.eq(ind);
+
+    t.add(matchedCard).addClass('active');
+    milestones.not(t).add(cards.not(matchedCard)).removeClass('active');
+    current = ind;
+    console.log(current);
+});
+
+$('#timeline-next').click(function () {
+    var milestones = $('.milestone');
+    var cards = $('.milestone-card-container').find('.milestone-card');
+    var ind = ((current + 1 > max)?max:current+1), matchedCard = cards.eq(ind), t = milestones.eq(ind);
+
+    t.add(matchedCard).addClass('active');
+    milestones.not(t).add(cards.not(matchedCard)).removeClass('active');
+    current = ind;
+    console.log(current);
 });
 
 

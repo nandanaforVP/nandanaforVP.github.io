@@ -133,7 +133,8 @@
 }
 
 .milestone-card-container .milestone-card .milestone-card-body div img {
-    height: 200px;
+    max-height: 200px;
+    max-width: 100%;
 }
 
 .milestone-card-container .milestone-card .milestone-card-body div p {
@@ -142,6 +143,14 @@
     font-size: 16px;
     color: var(--color-text);
 }
+
+.milestone-card-container .timeline-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color-text);
+}
+
 
 @media (min-width: 1250px) {
     .milestone::before {
