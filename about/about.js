@@ -31,12 +31,10 @@ const galleryImages = [
     '../assets/images/gallery/communique.jpg',
     '../assets/images/gallery/with_children1.jpg',
     '../assets/images/gallery/with_children2.jpg',
-    'https://preview.ibb.co/mysOxk/3.jpg',
-    'https://preview.ibb.co/mysOxk/3.jpg',
-    'https://preview.ibb.co/i0PmHk/1.jpg',
-    'https://preview.ibb.co/i0PmHk/1.jpg',
-    'https://preview.ibb.co/i0PmHk/1.jpg',
-    'https://preview.ibb.co/mWpE3Q/2.jpg',
+    '../assets/images/gallery/children.jpeg',
+    '../assets/images/gallery/nan_prayas.png',
+    '../assets/images/gallery/illu1.jpg',
+    '../assets/images/gallery/induction.jpg'
 ];
 
 const galleryLength = galleryImages.length;
