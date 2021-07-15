@@ -18,76 +18,76 @@ $(function () {
 /* Gallery Section JS */
 const galleryImages = [
     {
+        src: '../assets/images/gallery/Nandana-Cup.jpg',
+        description: 'Hall Best Fresher 2018 - 2019',
+    },
+    {
+        src: '../assets/images/gallery/acting.jpg',
+        description: 'General Championship Hindi Dramatics',
+    },
+    {
+        src: '../assets/images/gallery/babu.jpg',
+        description: '',
+    },
+    {
+        src: '../assets/images/gallery/children.jpeg',
+        description: "Children's Day Donation Drive, Mother Teresa Hall of Residence",
+    },
+    {
         src: '../assets/images/gallery/Football.jpg',
         description: 'Member of first-ever NSO Women Football Team',
     },
     {
-        src: '../assets/images/gallery/Nandana-Cup.jpg',
-        description: 'Description2',
-    },
-    {
-        src: '../assets/images/gallery/acting.jpg',
-        description: 'Description',
-    },
-    {
-        src: '../assets/images/gallery/babu.jpg',
-        description: 'Description2',
-    },
-    {
-        src: '../assets/images/gallery/children.jpeg',
-        description: 'Description',
-    },
-    {
         src: '../assets/images/gallery/classroom.jpg',
-        description: 'Description2',
+        description: '',
     },
     {
         src: '../assets/images/gallery/communique.jpg',
-        description: 'Description',
+        description: 'Communique Event',
     },
     {
         src: '../assets/images/gallery/group.jpeg',
-        description: 'Description2',
-    },
-    {
-        src: '../assets/images/gallery/group1.jpeg',
-        description: 'Description',
+        description: 'GYWS Fam',
     },
     {
         src: '../assets/images/gallery/illu1.jpg',
-        description: 'Description2',
+        description: 'MT Hall Illumination',
     },
     {
         src: '../assets/images/gallery/Illu.jpg',
-        description: 'Description',
+        description: 'MT Hall Illumination',
     },
     {
         src: '../assets/images/gallery/induction.jpg',
-        description: 'Description2',
+        description: 'Induction Program - 2019',
     },
     {
         src: '../assets/images/gallery/mess1.jpg',
-        description: 'Description',
+        description: '',
     },
     {
         src: '../assets/images/gallery/mess2.jpg',
-        description: 'Description2',
+        description: 'Food with Mess Dada, MT Hall',
     },
     {
         src: '../assets/images/gallery/Secy.jpg',
-        description: 'Description',
+        description: 'Contested for Secretary Knowledge Cup, TSG',
     },
     {
         src: '../assets/images/gallery/nan_prayas.png',
-        description: 'Description2',
+        description: 'CEO of PRAYAS, GYWS',
     },
     {
         src: '../assets/images/gallery/with_children1.jpg',
-        description: 'Description',
+        description: 'Jagriti Vidya Mandir of GYWS',
+    },
+    {
+        src: '../assets/images/gallery/group1.jpeg',
+        description: 'GYWS Fam',
     },
     {
         src: '../assets/images/gallery/with_children2.jpg',
-        description: 'Description2',
+        description: 'Jagriti Vidya Mandir of GYWS',
     },
 ];
 
@@ -118,20 +118,21 @@ let loadedLength = 0;
 const gallery = document.getElementById('about-gallery');
 
 function galleryLoadMore(event) {
-    for(i = 0; i < stepLength; i++) {
-        if(loadedLength < galleryLength) {
+    for (i = 0; i < stepLength; i++) {
+        if (loadedLength < galleryLength) {
             const gridContainer = document.createElement('div');
             gridContainer.classList.add('grid-container');
 
             const img = document.createElement('img');
             img.setAttribute('src', galleryImages[loadedLength].src);
-
-            const gridDescription = document.createElement('p');
-            gridDescription.classList.add('grid-description');
-            gridDescription.textContent = galleryImages[loadedLength].description;
-
             gridContainer.appendChild(img);
-            gridContainer.appendChild(gridDescription);
+
+            if (galleryImages[loadedLength].description) {
+                const gridDescription = document.createElement('p');
+                gridDescription.classList.add('grid-description');
+                gridDescription.textContent = galleryImages[loadedLength].description;
+                gridContainer.appendChild(gridDescription);
+            }
             gallery.appendChild(gridContainer);
             loadedLength++;
         } else {
@@ -142,4 +143,4 @@ function galleryLoadMore(event) {
 
 galleryLoadMore();
 
-document.getElementById('load-more-btn').addEventListener('click', galleryLoadMore);
+// document.getElementById('load-more-btn').addEventListener('click', galleryLoadMore);
