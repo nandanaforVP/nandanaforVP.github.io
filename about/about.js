@@ -136,7 +136,7 @@ function galleryLoadMore(event) {
             gallery.appendChild(gridContainer);
             loadedLength++;
         } else {
-            document.getElementById('load-more-btn').remove();
+            // document.getElementById('load-more-btn').remove();
         }
     }
 }
