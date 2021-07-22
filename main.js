@@ -103,7 +103,7 @@ var pieChart = new Chart(ctx, {
         labels: [
             "Strong Representation",
             "Accountability",
-            "Transperancy",
+            "Transparency",
         ],
         datasets: [
             {
