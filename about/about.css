@@ -137,6 +137,10 @@
     max-width: 100%;
 }
 
+.milestone-card-container .milestone-card .milestone-card-body div img.milestone-img-right {
+    margin-left: auto;
+}
+
 .milestone-card-container .milestone-card .milestone-card-body div p {
     align-self: center;
     padding: 10px 20px;
